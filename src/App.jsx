@@ -16,10 +16,10 @@ export default function App() {
       <Navbar contactOpen={contactOpen} setContactOpen={setContactOpen} />
       <Bot></Bot>
       <div className="absolute -z-50">
-        <div className="absolute hidden lg:block top-[600px] left-[1000px] w-32 h-32 bg-orange-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate"></div>
-        <div className="absolute top left-[10px] lg:left-24 w-32 h-32 bg-blue-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate"></div>
-        <div className="absolute top-[450px] left-[320px] lg:-left-10 w-32 h-32 bg-green-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate"></div>
-        <div className="absolute hidden lg:block top-16 left-[1350px] bottom-0 w-32 h-32 bg-purple-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate"></div>
+        <div className="absolute hidden lg:block top-[600px] left-[1000px] w-32 h-32 bg-orange-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate -z-50"></div>
+        <div className="absolute top left-10 lg:left-24 w-32 h-32 bg-blue-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate -z-50"></div>
+        <div className="absolute top-[450px] left-32 sm:left-64 lg:-left-10 w-32 h-32 bg-green-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate -z-50"></div>
+        <div className="absolute hidden lg:block top-16 left-[1350px] bottom-0 w-32 h-32 bg-purple-400 rounded-full blur-3xl opacity-80 animate-pulse animate-oscillate -z-50"></div>
       </div>
 
       <div className="flex flex-col justify-center items-center lg:items-start lg:flex-row-reverse lg:justify-center w-full w-max-[1440px] gap-10 mt-10 lg:mt-20 px-10">

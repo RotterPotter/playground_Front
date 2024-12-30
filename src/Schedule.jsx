@@ -67,7 +67,7 @@ export default function Schedule() {
   }, []);
 
   return (
-    <div className="relative w-screen lg:w-[800px] sm:border lg:text-base text-xs sm:bg-white  border-black/80 rounded-3xl shadow-black sm:shadow-inner z-40">
+    <div className="relative w-screen lg:w-[800px] sm:border lg:text-base text-xs sm:bg-white  border-black/80 rounded-3xl shadow-black sm:shadow-inner z-30">
       {isLoading && <LoadingUI></LoadingUI>}
       <div className="flex justify-between items-center p-5">
         <div>
