@@ -27,9 +27,8 @@ export default function Bot() {
         language-code="it"
         max-query-length="-1"
       >
-        <df-messenger-chat-bubble chat-title="Ben" chat-title-icon="public/Ben.svg"></df-messenger-chat-bubble>
+        <df-messenger-chat-bubble chat-title="Ben" chat-title-icon="Ben.svg"></df-messenger-chat-bubble>
       </df-messenger>
     </>
   );
 }
-  
