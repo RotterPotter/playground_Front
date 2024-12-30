@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { use } from 'react';
+import CLoseSVG from './assets/CLoseSVG';
 
 export default function DateSelector({ date, setDate, isDateSelectorOpen, setIsDateSelectorOpen }) {
   const dateSelectorRef = useRef(null);
@@ -54,10 +55,11 @@ export default function DateSelector({ date, setDate, isDateSelectorOpen, setIsD
   return (
     <div
       ref={dateSelectorRef} // Attach the ref to the container
-      className={`absolute w-[400px] bg-white shadow-xl z-50 p-2 rounded-xl text-sm flex flex-col justify-start items-center border
+      className={`absolute w-[300px] sm:w-[400px] bg-white shadow-xl z-50 p-2 rounded-xl  text-xs sm:text-sm flex flex-col justify-start items-center border
       ${isDateSelectorOpen ? 'block' : 'hidden'}`}
     >
-      <div className='flex flex-row justify-center items-center gap-3 p-1'>
+      <div className='relative flex flex-row justify-center items-center gap-3 p-1'>
+        
         <button
           onClick={() => setSelectedDate(addMonths(selectedDate, -1))}
           className='p-1 px-2 rounded-full border font-semibold text-gray-500 active:shadow-none active:bg-white hover:bg-gray-100/50'

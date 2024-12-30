@@ -33,9 +33,12 @@ export default function AppointmentCard({ appointment, className }) {
         }}
         className={`${className} absolute bg-black/60 rounded-xl h-[30px] w-full flex justify-center items-center border border-white group`}
       >
-        <p className="text-sm font-semibold text-white px-2">
+        <p className="hidden sm:block text-sm font-semibold text-white px-2">
           {appointment.appointment_time_start} -{" "}
           {appointment.appointment_time_end}
+        </p>
+        <p className="sm:hidden text-xs font-semibold text-white ">
+          {appointment.appointment_time_start}
         </p>
         <span className="absolute top-full z-50 mb-2 hidden group-hover:block bg-gray-600 text-white text-xs rounded-lg py-1 px-2 ">
           {appointment.client_name}

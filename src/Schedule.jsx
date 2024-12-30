@@ -67,14 +67,14 @@ export default function Schedule() {
   }, []);
 
   return (
-    <div className="relative w-[800px] border bg-white  border-black/80 rounded-3xl shadow-black shadow-inner z-50">
+    <div className="relative w-screen lg:w-[800px] sm:border lg:text-base text-xs sm:bg-white  border-black/80 rounded-3xl shadow-black sm:shadow-inner z-40">
       {isLoading && <LoadingUI></LoadingUI>}
       <div className="flex justify-between items-center p-5">
         <div>
           <p className="text-2xl font-semibold">Agenda</p>
           <button
             onClick={() => setIsDateSelectorOpen(!isDateSelectorOpen)}
-            className=" relative border rounded-xl p-1 px-2 text-sm font-semibold text-black/80 border-black/80"
+            className=" relative border rounded-xl p-1 px-2  sm:text-sm font-semibold text-black/80 border-black/80"
           >
             {date && date.toLocaleDateString()}
           </button>
@@ -87,9 +87,10 @@ export default function Schedule() {
         </div>
         <button
           onClick={updateClick} // Attach the click event
-          className="border border-black hover:-translate-y-[2px]  active:-translate-y-0  text-white font-semibold px-5 py-2 rounded-2xl"
+          className="border border-black hover:-translate-y-[1px] sm:text-xs active:-translate-y-0  text-white font-semibold px-5 py-2 rounded-2xl"
         >
-          <UpdateSVG />
+          <UpdateSVG width={`20px`} height={`20px`} className={""}/>
+          
         </button>
       </div>
       <div className="flex flex-col justify-center items-center">
@@ -99,7 +100,7 @@ export default function Schedule() {
         <div className="w-[90%] h-[0.5px] bg-black/50"></div>
         <div className="w-[90%] h-[0.5px] bg-black/50"></div>
         <div className="flex flex-row w-full items-start px-6">
-          <div className="flex justify-center items-center text-white w-[50px] h-[20px]">
+          <div className="flex justify-center items-center   sm:text-white text-[#F3F2EF] w-[25px] h-[20px] lg:w-[36px] lg:h-[20px]">
             00:00
           </div>
           <div className=" flex w-full h-full justify-between items-start px-3">
@@ -125,8 +126,8 @@ export default function Schedule() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row w-full h-[500px] overflow-auto overflow-y-auto custom-scrollbar items-start px-5 pb-5">
-          <div className="w-[50px] flex-col justify-center items-center border-r-2 border-black/50">
+        <div className="flex flex-row w-full sm:h-[500px] sm:overflow-auto sm:overflow-y-auto custom-scrollbar items-start px-2 lg:px-5 pb-5">
+          <div className="w-[50px] flex-col justify-center text-xs items-start lg:items-center border-r-2 border-black/50">
             {[
               "9:00",
               "10:00",
@@ -159,7 +160,7 @@ export default function Schedule() {
                   <AppointmentCard
                     key={appointment.id}
                     appointment={appointment}
-                    className={"bg-red-400"}
+                    className={"bg-orange-400"}
                   ></AppointmentCard>
                 ))}
             </div>

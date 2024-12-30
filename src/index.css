@@ -16,7 +16,7 @@ html, body {
 /* Ensure consistent font size and style */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #FFFFFF;
+  background-color: #F3F2EF;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -29,16 +29,69 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.274);
   border-radius: 10px; /* Only round the right side */
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.146);
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+@keyframes oscillate {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(0, 3px);
+  }
+  75% {
+    transform: translate(-20px, 0);
+  }
+}
+
+.animate-oscillate {
+  animation: oscillate 10s infinite ease-in-out; /* Adjust duration (5s) as needed */
+}
+
+
+df-messenger {
+  z-index: 40;
+  position: fixed;
+  --df-messenger-font-color: #000;
+  --df-messenger-chat-window-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  --df-messenger-font-family: Google Sans;
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  --df-messenger-chat-bubble-size: 64px;
+  --df-messenger-chat-bubble-background: #fff;
+  --df-messenger-chat-bubble-icon-color: #00000;
+  --df-messenger-font-size: 16px;
+  --df-messenger-chat-border: 1px solid #000;
+  --df-messenger-chat-border-radius: 16px;
+  --df-messenger-chat-bubble-border: 1px solid #0000003f;
+  --df-messenger-font-family: 'Poppins', sans-serif;
+  --df-messenger-titlebar-background: #fff;
+  --df-messenger-titlebar-font-color: #000;
+  --df-messenger-titlebar-title-font-family: 'Poppins', sans-serif;
+  --df-messenger-titlebar-title-font-weight: 500;
+  --df-messenger-chat-background: #F3F2EF;
+  --df-messenger-message-bot-background: #fff;
+  --df-messenger-message-bot-font-color: #000;
+  --df-messenger-message-user-background: #fff;
+  --df-messenger-message-user-font-color: #000;
+  --df-messenger-input-background: #F3F2EF;
+  --titlebar-icon-width: 32px;
+  --titlebar-icon-height: 32px;
+  bottom: 16px;
+  right: 16px;
+   /* Scale the entire widget */
 }

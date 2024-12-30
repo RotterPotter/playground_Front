@@ -1,8 +1,9 @@
 import React from 'react'
 
-export default function UpdateSVG () {
+export default function UpdateSVG ({width, height, className}) {
+  
   return (
-    <svg fill="#1e293b" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="update" class="icon glyph">
+    <svg className={className} fill="#1e293b" width={`${width}`} height={`${height}`} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="update" class="icon glyph">
 
       <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 

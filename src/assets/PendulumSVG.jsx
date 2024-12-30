@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function PendulumSVG() {
+export default function PendulumSVG( {width, height, className} ) {
   return (
-    <div className=''> 
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve" stroke="#000000" stroke-width="0.00512">
+    <div> 
+      <svg className={className} xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height={width} width={height} version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve" stroke="#000000" stroke-width="0.00512">
 
       <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
