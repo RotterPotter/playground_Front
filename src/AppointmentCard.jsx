@@ -42,6 +42,7 @@ export default function AppointmentCard({ appointment, className }) {
         </p>
         <span className="absolute top-full z-50 mb-2 hidden group-hover:block bg-gray-600 text-white text-xs rounded-lg py-1 px-2 ">
           {appointment.client_name}
+          {appointment.phone_number}
         </span>
       </button>
     </div>
