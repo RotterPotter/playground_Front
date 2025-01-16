@@ -23,7 +23,7 @@ export default function Bot() {
       />
       <df-messenger
         project-id="playground-ai-voice-assistant"
-        agent-id="ba7750f4-da9c-489b-b30f-9125fe9bca2b"
+        agent-id="27dc6c99-7a35-45be-b088-e0d86bfb6a85"
         language-code="it"
         max-query-length="-1"
       >
